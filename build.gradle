@@ -1,0 +1,42 @@
+group 'com.experitest'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+	maven {
+		url "https://demo.experitest.com/repo/"
+	}
+}
+
+eclipse {
+    classpath {
+        downloadJavadoc = true
+    }
+}
+
+clean.dependsOn "cleanEclipse"
+build.dependsOn "eclipse"
+
+
+
+dependencies {
+	compile 'org.testng:testng:6.9.10'
+	compile 'io.appium:java-client:6.1.0'
+	compile 'com.experitest:repo:+'
+	compile 'com.experitest:appium-seetest-extension:+'
+	compile 'com.applitools:eyes-appium-java4:+'
+// https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+	compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.5.0'
+
+}
+
+test {
+	useTestNG() {
+		suites './testng.xml'
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-class Suite" parallel="tests" thread-count="20" >
+  <test name="Test-class test1" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='17d09ba77d24'">
+      <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test2" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='LGH85056416a94'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test3" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='ad061703c8d3d9298d'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test4" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='ce10160ab1e1ce2201'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test5" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='1c7a29c334037ece'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test6" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='0815f81b78902904'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test7" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='ce0617164c1e90ee0d'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test8" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='52107cca64d6c311'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+  <test name="Test-class test9" >
+    <classes>
+      <parameter name="deviceQuery" value="@serialnumber='N2K7N16A10001114'">
+        <class name="com.experitest.auto.AndroidDemoTest" />
+      </parameter>
+    </classes>
+  </test>
+
+</suite>

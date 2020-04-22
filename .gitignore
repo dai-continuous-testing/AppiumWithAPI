@@ -1,0 +1,8 @@
+/bin/
+/cloud.properties
+test-output/
+.gradle/
+build/
+.idea/
+out/
+.settings/org.eclipse.jdt.core.prefs
